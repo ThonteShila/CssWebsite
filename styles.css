@@ -1,0 +1,44 @@
+/*#####################defaults*/
+nav, header,footer{
+    display: block;
+}
+body{
+    line-height: 1;
+    margin: 0;
+
+}
+/*###################nav bar#############*/
+nav{
+    width: 100%;
+    margin: 0;
+
+}
+nav ul{
+    background-color: #eee;
+    overflow: hidden;/*if overlap content after schrolling  it shuid hiden after scrool up it will*/
+    padding:0;
+    margin: 0;
+
+}
+ul.topnav li{
+    list-style: none;
+    float: left;
+}
+ul.topnav li.topnav-right{
+    float: right;
+}
+ul.topnav li a{/* change size of home contact ,etc*/
+    display: block;
+    text-decoration: none;
+    min-height: 16px;
+    text-align: center;
+    padding: 14px;
+    text-transform: uppercase;
+    color: #666;
+}
+ul.topnav li a:hover{                              /*when cursor moves from li color changes fron white to blue and blue to white*/
+    background-color: #0080ff;
+    color:#fff;
+
+}
+

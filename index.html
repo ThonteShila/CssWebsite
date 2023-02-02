@@ -7,7 +7,7 @@
     <body>
         
         <nav>
-            <ul class="topnav">
+            <ul class="topnav" id="dropdownClick">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#news">News</a></li>
                 <li><a href="#contact">Contact</a></li>
@@ -15,7 +15,24 @@
 
                 <li class="topnav-right"><a href="#signup">Sign Up</a></li>
                 <li class="topnav-right"><a href="#signin">Sign In</a></li>
+                <li class="dropdownIcon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776;</a></li>                               <!--unicode copied from https://unicode-table.com/en/search/?q=trigram+for+heaven -->
             </ul>
         </nav>
+
+        <!--code for dropdown menu on navigation bar-->
+
+        <script>
+            function dropdownMenu(){
+                var x = document.getElementById("dropdownClick")
+                if(x.className === "topnav")
+                {
+                    x.className += " responsive";
+                    
+                }
+                else{
+                    x.className="topnav";
+                }
+            }
+        </script>
     </body>
 </html>
